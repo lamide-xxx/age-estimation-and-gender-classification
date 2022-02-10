@@ -1,6 +1,6 @@
 # age-estimation-and-gender-classification
 
-In this assignment, I trained two CNN models(one from scratch and the other through transfer learning) to estimate a person's age and gender by given a face image. 
+In this file, I trained two CNN models(one from scratch and the other through transfer learning) to estimate a person's age and gender by given a face image. 
 
 MODEL A (trained from scratch)
 With 1M parameters (all trainable), Model A has 8 core layers - 4 convolutional and 4 fully connected. After each convolutional layer, a max-pooling layer, which is now called a sub-sampling layer (Karim, 2019), is applied. After the 4th convolutional and max-pooling layers, the model branches out into two different dense layers, with one branch dedicated to predicting age, and the other predicting gender. This approach of a common base is taken as both tasks are sharing the same data and lower visual features are general.
